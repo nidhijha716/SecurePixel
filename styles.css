@@ -1,0 +1,162 @@
+body {
+  font-family: 'Poppins', sans-serif, Arial, Helvetica;
+ 
+background: url('https://abbeysecurity.co.uk/wp-content/uploads/2018/01/Cyber-Security-Hacker.jpeg') no-repeat center center !important;
+
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.dark-theme {
+  background-color: rgba(26, 26, 26, 0.8);
+  color: #e0e0e0;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(68, 68, 68, 0.9);
+  padding: 10px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+
+.home-content {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #ff5722;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+.about-content, .features-content, .contact-content {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+}
+
+
+.embed-section, .retrieve-section {
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+label {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+input[type="file"],
+input[type="number"],
+textarea,
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Submit Button */
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1976d2;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  margin-top: 50px;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

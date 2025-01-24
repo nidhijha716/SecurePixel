@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SecurePixel: A tool for securely hiding and encrypting messages in images using steganography and encryption techniques.">
+    <title>SecurePixel: Where Encryption Meets Invisible Innovation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/svgs/solid/lock.svg" type="image/svg+xml">
+</head>
+<body class="dark-theme">
+    <header>
+        <h1>SecurePixel: Where Encryption Meets Invisible Innovation</h1>
+        <p>Your ultimate steganography and encryption tool.</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#upload">Get Started</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="home">
+        <div class="home-content">
+            <h2>Welcome to SecurePixel</h2>
+            <p>Securely hide and encrypt your data within images. Explore the power of steganography with just a few clicks.</p>
+            <button class="cta-button" onclick="window.location.href='#upload'">Get Started</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About SecurePixel</h2>
+            <p>SecurePixel is a tool designed for embedding secret messages within images using advanced encryption techniques. Developed for enthusiasts who are passionate about information security, this tool combines the elegance of cryptography with the hidden art of steganography.</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="features-content">
+            <h2>Features</h2>
+            <ul>
+                <li><b>Steganography</b>: Hide your messages within BMP images seamlessly.</li>
+                <li><b>Encryption</b>: Keep your data secure with Caesar Cipher encryption.</li>
+                <li><b>User-Friendly Interface</b>: Easily upload images, input keys, and perform actions.</li>
+                <li><b>Downloadable Output</b>: Retrieve and save your encoded/decoded images.</li>
+                <li><b>Cross-Platform Compatibility</b>: Works on all major operating systems.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="upload">
+        <div class="container">
+            <!-- Embed Data Section -->
+            <div class="embed-section">
+                <h2>Embed Data</h2>
+                <form id="embedForm">
+                    <label for="embedImage">Select Image (BMP):</label>
+                    <input type="file" id="embedImage" accept=".bmp" required><br><br>
+
+                    <label for="embedMessage">Message to Embed:</label>
+                    <textarea id="embedMessage" rows="4" cols="50" placeholder="Enter your secret message here..." required></textarea><br><br>
+
+                    <label for="encryptionKey">Encryption Key (positive integer):</label>
+                    <input type="number" id="encryptionKey" min="1" placeholder="Enter a positive integer" required><br><br>
+
+                    <label for="outputFilename">Output Filename (.bmp):</label>
+                    <input type="text" id="outputFilename" placeholder="output.bmp" required><br><br>
+
+                    <button type="submit">Embed Data</button>
+                </form>
+                <div id="embedResult" style="color: green; font-weight: bold; margin-top: 15px;"></div>
+            </div>
+
+            <!-- Retrieve Data Section -->
+            <div class="retrieve-section">
+                <h2>Retrieve Data</h2>
+                <form id="retrieveForm">
+                    <label for="retrieveImage">Select Encoded Image (BMP):</label>
+                    <input type="file" id="retrieveImage" accept=".bmp" required><br><br>
+
+                    <label for="decryptionKey">Decryption Key (positive integer):</label>
+                    <input type="number" id="decryptionKey" min="1" placeholder="Enter a positive integer" required><br><br>
+
+                    <button type="submit">Retrieve Data</button>
+                </form>
+                <div id="retrieveResult" style="color: green; font-weight: bold; margin-top: 15px;"></div>
+                <div id="retrieveResultContainer" style="color: purple; margin-top: 15px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-content">
+            <h2>About Us</h2>
+            <p>Created by Avlokita, Nidhi, and Tanya - passionate developers committed to enhancing digital security through innovative tools. SecurePixel is a testament to our dedication to technology and data privacy.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>THANK YOU!!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
